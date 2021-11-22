@@ -1,0 +1,38 @@
+*,
+*::before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.img__box {
+  height: 100vh;
+  background-image: url(./bg.jpg);
+  background-position: bottom left;
+  animation: animate 10s linear infinite;
+}
+
+.car {
+  position: absolute;
+  bottom: -50px;
+  left: 300px;
+  width: 200px;
+}
+
+.bike {
+  position: absolute;
+  bottom: 55px;
+  left: 700px;
+  width: 150px;
+}
+
+@keyframes animate {
+  0% {
+    background-position: bottom left;
+  }
+
+  100% {
+    background-position: bottom right;
+  }
+}

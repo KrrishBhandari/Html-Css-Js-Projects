@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <video id="slider" autoplay muted loop>
+        <source
+          src="https://player.vimeo.com/external/636217295.sd.mp4?s=b9c020aae81cd3f2b820ba899e6885701a6b047f&profile_id=164&oauth2_token_id=57447761"
+          type="video/mp4"
+        />
+      </video>
+
+      <ul class="navigation">
+        <li
+          onclick="VideoUrl('https://player.vimeo.com/external/368320203.sd.mp4?s=38b1bac5d627b94fb902597643461ee5f233d00a&profile_id=139&oauth2_token_id=57447761')"
+        >
+          <img
+            src="https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          />
+        </li>
+        <li
+          onclick="VideoUrl('https://player.vimeo.com/external/354645300.sd.mp4?s=b4f4d90d40969a0690268015f157ae490e4a8429&profile_id=139&oauth2_token_id=57447761')"
+        >
+          <img
+            src="https://images.pexels.com/photos/3629227/pexels-photo-3629227.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          />
+        </li>
+        <li
+          onclick="VideoUrl('https://player.vimeo.com/external/323925746.hd.mp4?s=3c2cfad7c0ea5fbeedddd782f0f7f394695457d3&profile_id=175&oauth2_token_id=57447761')"
+        >
+          <img
+            src="https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          />
+        </li>
+        <li
+          onclick="VideoUrl('https://player.vimeo.com/external/474042920.sd.mp4?s=aa187a411f7c095a7de96dec24f7c6ba7ad84868&profile_id=164&oauth2_token_id=57447761')"
+        >
+          <img
+            src="https://images.pexels.com/photos/1324803/pexels-photo-1324803.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          />
+        </li>
+      </ul>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

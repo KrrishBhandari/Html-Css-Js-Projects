@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #373737;
+}
+
+h1 {
+  position: relative;
+  font-size: 20px;
+  color: #f9f9f9;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#form {
+  position: relative;
+}
+
+#form #email {
+  width: 300px;
+  background-color: #292929;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 18px;
+}
+
+#form #inputBox {
+  position: relative;
+}
+
+#text {
+  display: block;
+  color: #000;
+  font-weight: 300;
+  font-style: italic;
+  padding: 5px;
+}
+
+#form.invalid #inputBox::before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 9px;
+  width: 24px;
+  height: 24px;
+  z-index: 1000;
+}
+
+#form.valid .inputbox::before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 9px;
+  width: 24px;
+  height: 24px;
+  z-index: 1000;
+}

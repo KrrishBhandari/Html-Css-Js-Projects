@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #060a1f;
+}
+
+#clock {
+  text-align: center;
+}
+
+#clock h2 {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+#time {
+  display: flex;
+}
+
+#time div {
+  padding: 50px;
+  background-color: #2196f3;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#time div span:nth-child(1) {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+#time div span:nth-child(2) {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}

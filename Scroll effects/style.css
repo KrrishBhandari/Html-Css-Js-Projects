@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 200vh;
+  background: #fff;
+}
+
+section {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: url(https://images.pexels.com/photos/1126814/pexels-photo-1126814.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940),
+    linear-gradient(230deg, #f533d4, #2461bb);
+  background-blend-mode: luminosity;
+  background-size: cover;
+}
+
+section .skewed {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform: skewY(-10deg);
+  transform-origin: top left;
+}

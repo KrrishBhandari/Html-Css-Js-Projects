@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item1">
+        <box-icon name="time" size="40px"></box-icon>
+        <p>Hours</p>
+        <span id="hour">0</span>
+      </div>
+      <div class="item2">
+        <box-icon name="time" size="40px"></box-icon>
+        <p>Minutes</p>
+        <span id="minute">0</span>
+      </div>
+      <div class="item3">
+        <box-icon name="time" size="40px"></box-icon>
+        <p>Seconds</p>
+        <span id="second">0</span>
+      </div>
+    </div>
+
+    <script>
+      const hour = document.getElementById("hour");
+      const minute = document.getElementById("minute");
+      const second = document.getElementById("second");
+      const item1 = document.querySelector(".item1");
+      const item2 = document.querySelector(".item2");
+      const item3 = document.querySelector(".item3");
+
+      const clock = () => {
+        let hours = new Date().getHours();
+        let minutes = new Date().getMinutes();
+        let seconds = new Date().getSeconds();
+
+        hour.innerHTML = hours;
+        minute.innerHTML = minutes;
+        second.innerHTML = seconds;
+      };
+
+      item1.addEventListener("click", () => {
+        item2.style.flex = "25%";
+        item3.style.flex = "25%";
+        item1.style.flex = "100%";
+      });
+
+      item2.addEventListener("click", () => {
+        item1.style.flex = "25%";
+        item3.style.flex = "25%";
+        item2.style.flex = "100%";
+      });
+
+      item3.addEventListener("click", () => {
+        item1.style.flex = "25%";
+        item2.style.flex = "25%";
+        item3.style.flex = "100%";
+      });
+
+      let interval = setInterval(clock, 1000);
+    </script>
+  </body>
+</html>

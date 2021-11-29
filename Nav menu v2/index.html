@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Menu v2</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <p onclick="openPopup()">Click Me</p>
+
+      <div class="popupBox">
+        <ul>
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">products</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+
+        <div class="popupIcon" onclick="removePopup()">
+          <box-icon name="x"></box-icon>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const popupBox = document.querySelector(".popupBox");
+
+      const openPopup = () => {
+        popupBox.classList.add("active");
+      };
+
+      const removePopup = () => {
+        popupBox.classList.remove("active");
+      };
+    </script>
+  </body>
+</html>

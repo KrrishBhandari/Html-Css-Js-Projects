@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Menu v3</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav__icon" onclick="openNav()">
+        <box-icon name="menu" size="32px"></box-icon>
+      </div>
+      <div class="nav">
+        <ul>
+          <li>Home</li>
+          <li>Work</li>
+          <li>Links</li>
+          <li>Contact</li>
+          <li>About</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      const openNav = () => {
+        const Nav = document.querySelector(".nav");
+        Nav.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

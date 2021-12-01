@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff6d9;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  overflow: hidden;
+  grid-template-areas:
+    "Box1 Box1 Box2 Box2 Box3"
+    "Box1 Box1 Box4 Box5 Box6"
+    "Box1 Box1 Box7 Box8 Box9"
+    "Box10 Box10 Box10 Box8 Box11";
+}
+
+.Box1 {
+  grid-area: Box1;
+  padding: 60px 10px;
+}
+
+.Box1 h1 {
+  margin-bottom: 10px;
+}
+
+.Box2 {
+  grid-area: Box2;
+  background-color: #f7cfb1;
+  border-radius: 10px;
+}
+
+.Box3 {
+  grid-area: Box3;
+  background-color: #fcc99e;
+  box-shadow: -2px 2px 8px 2px hsla(0, 0%, 0%, 0.2);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.Box3:hover {
+  transform: rotate(20deg);
+  box-shadow: -20px 20px 12px 6px hsla(0, 0%, 0%, 0.2);
+  background-color: #f57b51;
+}
+
+.Box4 {
+  grid-area: Box4;
+}
+
+.Box5 {
+  grid-area: Box5;
+  background-color: #fcc99e;
+  box-shadow: -2px 2px 8px 2px hsla(0, 0%, 0%, 0.2);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.Box5:hover {
+  transform: rotate(20deg);
+  box-shadow: -20px 20px 12px 6px hsla(0, 0%, 0%, 0.2);
+  background-color: #ea124f;
+}
+
+.Box6 {
+  grid-area: Box6;
+  background-color: #f7cfb1;
+  border-radius: 10px;
+}
+
+.Box7 {
+  grid-area: Box7;
+  background-color: #fcc99e;
+  box-shadow: -2px 2px 8px 2px hsla(0, 0%, 0%, 0.2);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.Box7:hover {
+  transform: rotate(20deg);
+  box-shadow: -20px 20px 12px 6px hsla(0, 0%, 0%, 0.2);
+  background-color: #00005c;
+}
+
+.Box8 {
+  grid-area: Box8;
+  background-color: #f7cfb1;
+  border-radius: 10px;
+}
+
+.Box9 {
+  grid-area: Box9;
+  background-color: #f7cfb1;
+  border-radius: 10px;
+}
+
+.Box10 {
+  grid-area: Box10;
+  background-color: #f7cfb1;
+  border-radius: 10px;
+}
+
+.Box11 {
+  grid-area: Box11;
+  background-color: #fcc99e;
+  box-shadow: -2px 2px 8px 2px hsla(0, 0%, 0%, 0.2);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.Box11:hover {
+  transform: rotate(20deg);
+  box-shadow: -20px 20px 12px 6px hsla(0, 0%, 0%, 0.2);
+  background-color: #00a8cc;
+}

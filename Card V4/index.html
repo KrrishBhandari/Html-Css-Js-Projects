@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card V4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="item i-1 active">
+          <p>Happy Sushi Lunch</p>
+          <ul>
+            <li>California Roll</li>
+            <li>2 Pieces Salmon Nigiri</li>
+            <li>Sea Salt Edamame</li>
+            <li>Miso Soup</li>
+          </ul>
+          <div class="item__btn">
+            <span>$12</span>
+          </div>
+        </div>
+        <div class="item i-2">
+          <p>Sushi Lover's Lunch</p>
+          <ul>
+            <li>Spicy Tuna Roll</li>
+            <li>Shrimp Tempura Roll</li>
+            <li>4 Pieces Asssorted Nigiri</li>
+            <li>Wonton Soup</li>
+          </ul>
+          <div class="item__btn">
+            <span>$18</span>
+          </div>
+        </div>
+      </div>
+      <div class="btn">
+        <a href="#"></a>
+      </div>
+    </div>
+
+    <script>
+      const item1 = document.querySelector(".i-1");
+      const item2 = document.querySelector(".i-2");
+
+      item1.addEventListener("click", () => {
+        item2.classList.remove("active");
+        item1.classList.add("active");
+      });
+
+      item2.addEventListener("click", () => {
+        item1.classList.remove("active");
+        item2.classList.add("active");
+      });
+    </script>
+  </body>
+</html>

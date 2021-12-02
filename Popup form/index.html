@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <a href="#" id="popupButton" onclick="openPopup()">Open Form</a>
+    <div class="popup__container">
+      <div class="item1">
+        <img
+          src="https://cdn.pixabay.com/photo/2021/09/08/15/24/couple-6607143_960_720.jpg"
+          alt="image"
+        />
+      </div>
+      <div class="item2">
+        <h2>Ideas and UI components in your inbox</h2>
+        <p>
+          Sign up to receive ideas, free components and free resources plus 15%
+          on all of our pro UI kits.
+        </p>
+        <input type="text" placeholder="Email address" />
+        <button type="submit">Subscribe</button>
+        <span> No spams included </span>
+        <div class="close__btn" onclick="closePopup()">
+          <box-icon name="x"></box-icon>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const popupButton = document.getElementById("popupButton");
+      const container = document.querySelector(".popup__container");
+
+      const openPopup = () => {
+        container.classList.add("active");
+      };
+
+      const closePopup = () => {
+        container.classList.remove("active");
+      };
+    </script>
+  </body>
+</html>

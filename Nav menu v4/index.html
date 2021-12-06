@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <div class="container" id="nav">
+      <div class="banner">
+        <img
+          src="https://cdn.pixabay.com/photo/2021/09/08/15/24/couple-6607143_960_720.jpg"
+          alt="image"
+        />
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="#" data-text="Home">Home</a></li>
+          <li><a href="#" data-text="About">About</a></li>
+          <li><a href="#" data-text="Services">Services</a></li>
+          <li><a href="#" data-text="Portfolio">Portfolio</a></li>
+          <li><a href="#" data-text="Team">Team</a></li>
+          <li><a href="#" data-text="Contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="menuIcon" id="toggle" onclick="menuToggle()">
+      <box-icon name="menu" color="#ffffff" size="42px"></box-icon>
+    </div>
+
+    <script>
+      const menuToggle = () => {
+        let nav = document.getElementById("nav");
+        let toggle = document.getElementById("toggle");
+        nav.classList.toggle("active");
+        toggle.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

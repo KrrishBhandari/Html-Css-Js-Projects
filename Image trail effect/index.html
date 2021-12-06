@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Trail Effect</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="imgBox">
+      <img
+        src="https://images.pexels.com/photos/10161004/pexels-photo-10161004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        alt="image1"
+      />
+    </div>
+    <div class="imgBox">
+      <img
+        src="https://images.pexels.com/photos/10058971/pexels-photo-10058971.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      />
+    </div>
+    <div class="imgBox">
+      <img
+        src="https://images.pexels.com/photos/9824669/pexels-photo-9824669.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        alt="image3"
+      />
+    </div>
+    <div class="imgBox">
+      <img
+        src="https://images.pexels.com/photos/10346632/pexels-photo-10346632.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        alt="image4"
+      />
+    </div>
+    <div class="imgBox">
+      <img
+        src="https://images.pexels.com/photos/10351670/pexels-photo-10351670.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        alt="image5"
+      />
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+      integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      document.addEventListener("mousemove", (e) => {
+        gsap.to(".imgBox", {
+          x: e.clientX,
+          y: e.clientY,
+          stagger: -0.1,
+        });
+      });
+    </script>
+  </body>
+</html>

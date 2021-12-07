@@ -13,6 +13,11 @@ body {
   align-items: center;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 a {
   text-decoration: none;
   font-size: 18px;
@@ -21,15 +26,84 @@ a {
 }
 
 .ghostBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px 40px;
   color: #fff;
   background: #111111;
   border-radius: 10px;
   transition: all 0.5s;
+  margin-bottom: 20px;
 }
 
 .ghostBtn:hover {
   color: #111111;
   background: #fff;
   border: 1px solid #111111;
+}
+
+.iconbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #111111;
+  padding: 15px 40px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.iconbtn > a {
+  color: #fff;
+}
+
+.hoverEffect {
+  padding: 15px 40px;
+  color: #fff;
+  background: #111111;
+  border-radius: 10px;
+  transition: all 0.5s;
+  margin-bottom: 20px;
+}
+
+.hoverEffect:hover {
+  animation: jittery 4s ease-in-out;
+}
+
+@keyframes jittery {
+  5%,
+  50% {
+    transform: scale(1);
+  }
+
+  10% {
+    transform: scale(0.9);
+  }
+
+  15% {
+    transform: scale(1.15);
+  }
+
+  20% {
+    transform: scale(1.15) rotate(-5deg);
+  }
+
+  25% {
+    transform: scale(1.15) rotate(5deg);
+  }
+
+  30% {
+    transform: scale(1.15) rotate(-3deg);
+  }
+
+  35% {
+    transform: scale(1.15) rotate(2deg);
+  }
+
+  40% {
+    transform: scale(1.15) rotate(0);
+  }
 }

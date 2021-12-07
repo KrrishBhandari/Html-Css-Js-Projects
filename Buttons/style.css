@@ -20,7 +20,7 @@ body {
 
 a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 1px;
 }
@@ -73,6 +73,22 @@ a {
   animation: jittery 4s ease-in-out;
 }
 
+.jellyBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+  color: #fff;
+  background: #111111;
+  border-radius: 10px;
+  transition: all 0.5s;
+  margin-bottom: 20px;
+}
+
+.jellyBtn:hover {
+  animation: jellyEffect 0.5s;
+}
+
 @keyframes jittery {
   5%,
   50% {
@@ -105,5 +121,19 @@ a {
 
   40% {
     transform: scale(1.15) rotate(0);
+  }
+}
+
+@keyframes jellyEffect {
+  0% {
+    transform: scale(0.95, 1.1);
+  }
+
+  50% {
+    transform: scale(1.1, 0.95);
+  }
+
+  100% {
+    transform: scale(0.95, 1.05);
   }
 }

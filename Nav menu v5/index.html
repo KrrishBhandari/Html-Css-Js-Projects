@@ -10,14 +10,14 @@
   </head>
   <body>
     <div class="section-1">
-      <div class="section__icon">
+      <div class="section__icon" onclick="openNavbar()">
         <box-icon name="menu" size="42px"></box-icon>
       </div>
       <p>Click the burger menu</p>
     </div>
 
     <div class="navbar">
-      <div class="nav__icon">
+      <div class="nav__icon" onclick="closeNavbar()">
         <box-icon name="x" size="42px" color="#ffffff"></box-icon>
       </div>
       <div class="nav__wrapper">
@@ -70,5 +70,17 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const navbar = document.querySelector(".navbar");
+
+      const openNavbar = () => {
+        navbar.classList.add("active");
+      };
+
+      const closeNavbar = () => {
+        navbar.classList.remove("active");
+      };
+    </script>
   </body>
 </html>

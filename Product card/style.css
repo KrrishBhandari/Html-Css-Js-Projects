@@ -57,7 +57,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #fffcdc;
+  background-color: #edd2f3;
   transition: all 0.5s;
 }
 
@@ -70,17 +70,25 @@ body {
 }
 
 .container__itemBox-2 {
+  position: relative;
   flex-basis: 20%;
   width: 100%;
   background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .item1 {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  transition: all 0.5s;
 }
 
 .item1__content {
@@ -115,11 +123,55 @@ body {
   transition: all 0.5s;
 }
 
+.item2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fffcdc;
+  transform: translateX(100%);
+  transition: all 0.5s;
+}
+
+.delete {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #bc3b59;
+  transform: translateY(100%);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.border {
+  border-right: 0;
+  border-left: 1px solid #919191;
+}
+
+.item1.active {
+  transform: translateX(-100%);
+}
+
+.item2.active {
+  transform: translateX(0);
+}
+
 .item1__icon:hover {
-  background-color: #fc997c;
+  background-color: #edd2f3;
 }
 
 .container:hover {
   transform: scale(1.08);
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.item2:hover .delete {
+  transform: translateY(0);
 }

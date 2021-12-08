@@ -29,11 +29,42 @@
             <h3>Chair</h3>
             <span>£250</span>
           </div>
-          <div class="item1__icon">
+          <div class="item1__icon" id="cart">
             <box-icon name="cart"></box-icon>
+          </div>
+        </div>
+
+        <div class="item2">
+          <div class="item1__icon" id="cart">
+            <box-icon name="check"></box-icon>
+
+            <div class="delete">
+              <box-icon name="x" color="#ffffff"></box-icon>
+            </div>
+          </div>
+          <div class="item1__content border">
+            <h3>Chair</h3>
+            <span>Added to your cart</span>
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      const itemOne = document.querySelector(".item1");
+      const itemTwo = document.querySelector(".item2");
+      const Cart = document.getElementById("cart");
+      const Remove = document.querySelector(".delete");
+
+      Cart.addEventListener("click", () => {
+        itemOne.classList.add("active");
+        itemTwo.classList.add("active");
+      });
+
+      Remove.addEventListener("click", () => {
+        itemOne.classList.remove("active");
+        itemTwo.classList.remove("active");
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="wrapper__imgBox">
+          <img
+            src="https://images.pexels.com/photos/9910806/pexels-photo-9910806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="image"
+          />
+        </div>
+
+        <div class="wrapper__content">
+          <h3>Customer Login</h3>
+          <a href="#" onclick="openForm()">Login</a>
+        </div>
+
+        <div class="container__formBox" id="formBox">
+          <div class="formBox__items">
+            <p>Customer Login</p>
+            <div class="closeIconBox" onclick="closeForm()">
+              <box-icon name="x"></box-icon>
+            </div>
+          </div>
+          <div class="formBox__inputSection">
+            <div class="inputBox__1">
+              <div class="inputBox__icon">
+                <box-icon name="user"></box-icon>
+              </div>
+              <input type="text" placeholder="Username" />
+            </div>
+
+            <div class="inputBox__1">
+              <div class="inputBox__icon">
+                <box-icon name="lock-alt"></box-icon>
+              </div>
+              <input type="text" placeholder="Password" />
+            </div>
+
+            <div class="rememberme__section">
+              <span>Remembe Me</span>
+              <div class="remember__checkBox">
+                <span>Off</span>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+                <span>On</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#">Login</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const formBox = document.getElementById("formBox");
+
+      const openForm = () => {
+        formBox.classList.add("active");
+      };
+
+      const closeForm = () => {
+        formBox.classList.remove("active");
+      };
+    </script>
+  </body>
+</html>

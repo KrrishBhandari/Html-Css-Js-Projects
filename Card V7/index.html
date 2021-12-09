@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card V7</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__headingBox">
+        <div class="headingBox__item--1">
+          <box-icon name="chevron-left"></box-icon>
+          <span>BACK TO ALL PLANTS</span>
+        </div>
+        <div
+          class="headingBox__item--2"
+          onmouseover="mouseHover()"
+          onmouseout="mouseOut()"
+        >
+          <box-icon name="heart" id="heart"></box-icon>
+        </div>
+      </div>
+      <div class="container__contentBox">
+        <div class="contentBox__img">
+          <img
+            src="https://images.pexels.com/photos/1701535/pexels-photo-1701535.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="Plants Images"
+          />
+        </div>
+        <div class="contentBox__content">
+          <div class="content__item--1">
+            <h3>CLASSIC PEACE LILY</h3>
+            <h4>POPULAR HOUSE PLANT</h4>
+          </div>
+          <div class="content__item--2">
+            <span>$18</span>
+          </div>
+          <div class="content__item--3">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              sequi consequatur, minima delectus veritatis, cumque debitis amet
+            </p>
+          </div>
+          <div class="content__item--4">
+            <a href="#">Add to cart</a>
+            <a href="#">Wishlist</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const Heart = document.getElementById("heart");
+
+      const mouseHover = () => {
+        Heart.setAttribute("color", "#EC255A");
+      };
+
+      const mouseOut = () => {
+        Heart.setAttribute("color", "");
+      };
+    </script>
+  </body>
+</html>

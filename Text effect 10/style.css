@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #292c6d;
+}
+
+span {
+  position: relative;
+  font-size: 140px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+      138deg,
+      transparent 0px,
+      transparent 12px,
+      #fffcdc 12px,
+      #fffcdc 18px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      transparent 0px,
+      transparent 12px,
+      #fffcdc 12px,
+      #fffcdc 18px
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 1px #fffcdc;
+  -webkit-text-stroke-color: transparent;
+}

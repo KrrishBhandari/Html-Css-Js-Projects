@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form__section">
+        <!-- ************************* Login Section *************************** -->
+        <div class="login__form" id="signinForm">
+          <div class="inputbox">
+            <div class="item__lebal">
+              <box-icon name="user"></box-icon>
+              <span>Username</span>
+            </div>
+            <div class="input">
+              <input type="text" />
+            </div>
+          </div>
+          <div class="inputbox">
+            <div class="item__lebal">
+              <box-icon name="lock-alt"></box-icon>
+              <span>Password</span>
+            </div>
+            <div class="input">
+              <input type="text" />
+            </div>
+          </div>
+
+          <div class="signin__button">
+            <a href="#">Enter</a>
+          </div>
+        </div>
+
+        <!-- ************************** Signup section ******************* -->
+
+        <div class="signup__form" id="signupForm">
+          <div class="inputbox">
+            <div class="item__lebal">
+              <box-icon name="user"></box-icon>
+              <span>Name</span>
+            </div>
+            <div class="input">
+              <input type="text" />
+            </div>
+          </div>
+          <div class="inputbox">
+            <div class="item__lebal">
+              <box-icon name="mail-send"></box-icon>
+              <span>Email</span>
+            </div>
+
+            <div class="input">
+              <input type="text" />
+            </div>
+          </div>
+          <div class="signin__button">
+            <a href="#">Sign Me up!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="button__section">
+        <a href="#" id="signin">Sign In</a>
+        <a href="#" id="register">Register</a>
+      </div>
+    </div>
+
+    <script>
+      const signin = document.getElementById("signin");
+      const register = document.getElementById("register");
+      const signinForm = document.getElementById("signinForm");
+      const signupForm = document.getElementById("signupForm");
+
+      signin.addEventListener("click", () => {
+        signupForm.style.transform = "translateX(100%)";
+        signinForm.style.transform = "translateX(0)";
+      });
+
+      register.addEventListener("click", () => {
+        signinForm.style.transform = "translateX(-100%)";
+        signupForm.style.transform = "translateX(0)";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 300px;
+  height: 350px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+}
+
+.form__section {
+  position: relative;
+  flex-basis: 85%;
+}
+
+.login__form {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #daddfc;
+  transition: all 0.5s;
+}
+
+.signup__form {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  background-color: #daddfc;
+  transition: all 0.5s;
+}
+
+.inputbox {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.inputbox .item__lebal {
+  display: flex;
+  align-items: center;
+}
+
+.item__lebal span {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.inputbox .input {
+  margin-top: 10px;
+}
+
+.input input {
+  width: 100%;
+  padding: 15px 10px;
+  border: none;
+  outline: none;
+}
+
+.signin__button {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rightLeft 1s ease-in-out;
+}
+
+.signin__button a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 15px;
+  background-color: #2e4c6d;
+}
+
+.button__section {
+  flex-basis: 15%;
+  display: flex;
+  margin-top: 10px;
+}
+
+.button__section a {
+  text-decoration: none;
+  flex-basis: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000000;
+}
+
+.button__section a:first-child {
+  margin-right: 5px;
+}
+
+@keyframes rightLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

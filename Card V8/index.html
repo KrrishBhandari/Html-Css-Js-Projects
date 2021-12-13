@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card V8</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="box__img">
+          <img
+            src="https://cdn.pixabay.com/photo/2021/12/07/23/09/cup-6854258_960_720.jpg"
+            alt="Card image"
+          />
+        </div>
+        <div class="box__content">
+          <div class="item1"></div>
+          <div class="item2"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const box = document.querySelector(".box");
+
+      box.addEventListener("click", () => {
+        box.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

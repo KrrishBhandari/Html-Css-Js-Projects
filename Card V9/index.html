@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card V9</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://cdn.pixabay.com/photo/2019/12/28/22/06/pedalboard-4725871_960_720.jpg"
+        alt="Card image"
+      />
+      <div class="wrapper">
+        <div class="wrapper__img">
+          <img
+            src="https://cdn.pixabay.com/photo/2019/12/28/22/06/pedalboard-4725871_960_720.jpg"
+            alt="Card image"
+          />
+        </div>
+        <div class="wrapper__content">
+          <span>A Mission</span>
+          <div class="wrapper__icon" onclick="openPopup()">
+            <box-icon name="dots-vertical-rounded" color="#000000"></box-icon>
+          </div>
+        </div>
+
+        <div class="wrapper__popup">
+          <ul>
+            <li>
+              <box-icon name="windows" size="18px"></box-icon><span>Open</span>
+            </li>
+            <li>
+              <box-icon type="solid" name="save" size="18px"></box-icon
+              ><span>Save</span>
+            </li>
+            <li>
+              <box-icon name="share-alt" size="18px"></box-icon
+              ><span>Share</span>
+            </li>
+            <li>
+              <box-icon name="download" size="18px"></box-icon
+              ><span>Download</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const popup = document.querySelector(".wrapper__popup");
+
+      const openPopup = () => {
+        popup.classList.add("active");
+      };
+    </script>
+  </body>
+</html>

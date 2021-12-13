@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click And Hold Effect</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <h1>Click and hold effect</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aliquid
+        repellat voluptatem asperiores, accusamus veritatis nemo nesciunt
+        obcaecati dolor, cupiditate distinctio enim iure? Voluptatem ex deserunt
+        rerum accusantium soluta veniam sed libero, quas non perferendis maxime
+        ullam cupiditate quasi voluptatum sit quos ea tenetur. Asperiores maxime
+        reiciendis quisquam excepturi autem fugiat nisi, nihil est? Id tempore
+        dolor sequi asperiores labore est, molestiae dignissimos aut modi
+        perferendis autem ipsa earum enim excepturi nobis vero facere omnis
+        aperiam assumenda minus! Ab eos aspernatur reiciendis, quia impedit,
+        velit doloribus amet voluptate qui ipsam accusamus eaque corrupti? Magni
+        velit odio nam impedit! Voluptas asperiores eos perferendis sequi
+        reprehenderit facilis, ut voluptatum aliquid eaque illo vero dicta
+        veniam explicabo commodi eius quia velit nihil facere, magni debitis
+        obcaecati fuga. Nobis eum quis, voluptatibus est facilis voluptate
+        minima, doloremque laborum architecto autem tenetur fugiat placeat
+        consectetur repellat esse. Illo dolor ab quae laudantium atque eligendi
+        nemo, facere modi omnis alias magnam, soluta aliquam nostrum nam tempore
+        quos quisquam labore. Cumque dignissimos obcaecati temporibus animi
+        labore ipsum reprehenderit debitis vel, ipsa adipisci numquam minus
+        repellendus aperiam accusantium. Harum, obcaecati iusto! Blanditiis
+        ipsam, est, totam consequatur saepe nisi perspiciatis consectetur cum
+        praesentium molestiae libero sit aliquid voluptates sunt culpa error
+        eligendi in sed id quod illo nobis veritatis! Maiores voluptatum quia
+        omnis quos fuga ipsa, odio tenetur laboriosam est accusantium voluptate
+        aperiam porro velit at eum! Et aut debitis, fugiat,
+
+        <br />
+        <br />
+        quibusdam aspernatur non, corrupti architecto unde aliquid fuga
+        praesentium earum consequatur? Tenetur incidunt suscipit, vel nobis cum
+        quam, ullam dolor alias nemo ipsum laudantium corporis recusandae
+        inventore enim quisquam dolore eaque labore? Nesciunt maxime ea
+        voluptatibus ad iure. Iusto similique, officiis natus fuga optio vitae,
+        error tempore ipsum ipsa rem libero, ratione unde iure! Reiciendis
+        numquam facilis veritatis non? Vitae repudiandae, non a minima totam
+        dignissimos quia tenetur! Repellendus quas qui ab culpa possimus! Ad
+        quam laudantium doloribus.
+
+        <br />
+        <br />
+        Error harum sit modi. Explicabo fugit necessitatibus beatae quae
+        voluptatem enim iure? Nobis molestias cum ut cupiditate veritatis, iste
+        aut in alias commodi, hic blanditiis molestiae deleniti perspiciatis
+        incidunt quod quaerat libero optio tenetur quae ex sint qui! Ad ratione
+        adipisci sit laudantium cum, non minus aperiam magni error nostrum ullam
+        perferendis, dolorum quod velit molestias deserunt provident facere,
+        sapiente odio. Eum doloribus mollitia, quidem atque sapiente iure quod.
+        Soluta voluptatem, id quisquam similique pariatur dignissimos
+        perspiciatis expedita, vero facilis, iste recusandae. Exercitationem
+        optio mollitia nulla non, atque consequatur voluptate.
+      </p>
+    </section>
+    <div id="cursor"></div>
+
+    <script>
+      const cursor = document.getElementById("cursor");
+
+      window.onmousemove = function (e) {
+        let x = e.clientX,
+          y = e.clientY;
+
+        cursor.style.left = x + "px";
+        cursor.style.top = y + "px";
+      };
+    </script>
+  </body>
+</html>

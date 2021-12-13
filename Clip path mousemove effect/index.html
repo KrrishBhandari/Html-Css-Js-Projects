@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clip Path Mousemove Effect</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="banner">
+      <div class="content">
+        <h2>Clip path mousemove effect</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          natus porro odit, exercitationem ab repellendus esse maiores quam?
+          Provident, vitae, quod recusandae minima cupiditate alias magnam
+          asperiores minus maiores, perspiciatis ab. Esse iusto voluptatibus
+          eveniet voluptatum et ipsa tempore culpa nihil nesciunt, nulla natus
+          nobis excepturi repellendus, sint error dolore corporis delectus
+          adipisci similique magni facilis illum quos quae expedita. Adipisci
+          reprehenderit harum modi, eligendi quam laborum, ea quisquam dolorem
+          in perspiciatis distinctio? Ipsum, nostrum consequuntur doloribus
+          dolore non odio, necessitatibus consectetur et rerum sequi ut hic eius
+          obcaecati nisi quas atque officiis impedit cupiditate quae minima,
+        </p>
+      </div>
+    </section>
+
+    <script>
+      const main = document.documentElement;
+
+      main.addEventListener("mousemove", (e) => {
+        main.style.setProperty("--x", e.clientX + "px");
+        main.style.setProperty("--y", e.clientY + "px");
+      });
+    </script>
+  </body>
+</html>

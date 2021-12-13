@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card V10</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__one">
+        <img
+          src="https://images.pexels.com/photos/1447468/pexels-photo-1447468.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="Card image"
+        />
+      </div>
+      <div class="container__two">
+        <div class="conatiner__content">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima,
+            eveniet suscipit explicabo porro aperiam hic eos deleniti. Autem.
+          </p>
+        </div>
+        <div class="container__heading">
+          <h2>Krishna</h2>
+        </div>
+      </div>
+      <div class="container__button">
+        <box-icon name="plus"></box-icon>
+      </div>
+    </div>
+
+    <script>
+      const button = document.querySelector(".container__button");
+      const containerTwo = document.querySelector(".container__two");
+
+      button.addEventListener("click", () => {
+        containerTwo.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

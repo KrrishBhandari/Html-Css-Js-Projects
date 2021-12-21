@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav menu 7</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu__icon" id="openIcon">
+        <box-icon name="menu" size="48px"></box-icon>
+      </div>
+      <div class="nav__menu" id="menu">
+        <div class="wrapper">
+          <h1>Krishna</h1>
+          <div class="close__icon">
+            <box-icon name="x" size="48px"></box-icon>
+          </div>
+        </div>
+        <ul>
+          <li>Section : 1</li>
+          <li>Section : 2</li>
+          <li>Section : 3</li>
+          <li>Section : 4</li>
+          <li>Section : 5</li>
+        </ul>
+      </div>
+      <section class="item1">Lorem ipsum dolor sit amet.</section>
+      <section class="item2">Lorem ipsum dolor sit amet.</section>
+      <section class="item3">Lorem ipsum dolor sit amet.</section>
+      <section class="item4">Lorem ipsum dolor sit amet.</section>
+      <section class="item5">Lorem ipsum dolor sit amet.</section>
+      <section class="item6">Lorem ipsum dolor sit amet.</section>
+    </div>
+    <script>
+      const openIcon = document.getElementById("openIcon");
+      const Menu = document.getElementById("menu");
+      const closeIcon = document.querySelector(".close__icon");
+
+      openIcon.addEventListener("click", () => {
+        Menu.classList.add("active");
+      });
+
+      closeIcon.addEventListener("click", () => [
+        Menu.classList.remove("active"),
+      ]);
+    </script>
+  </body>
+</html>

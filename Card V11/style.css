@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #daddfc;
+}
+
+.container {
+  width: 700px;
+  padding: 60px 40px 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.item1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item1 input {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #4d4d4d;
+  outline: none;
+}
+
+.item1__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item1__wrapper span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5c7aea;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.item2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.item2 h3 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 20px 0;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4e4f8;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.box:nth-child(2) {
+  background-color: #faf2fc;
+}
+
+.box:nth-child(3) {
+  background-color: #faf2fc;
+}
+
+.box__item1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box__item1 a {
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.box__item1 label {
+  margin-left: 20px;
+}
+
+.box__item1 label h4,
+span {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.box__item1 label > span {
+  font-size: 14px;
+  color: #333333;
+}
+
+.box__item2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.box__item2 p {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #333333;
+}
+
+.box__item3 {
+  cursor: pointer;
+}

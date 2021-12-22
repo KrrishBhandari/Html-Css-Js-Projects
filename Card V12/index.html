@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card V12</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card__container">
+      <h2>Add new card</h2>
+
+      <div class="card__numberInput">
+        <input type="password" placeholder=" " class="textbox" />
+        <label>Card number</label>
+        <span
+          ><box-icon type="solid" name="credit-card" color="#395f91"></box-icon
+        ></span>
+      </div>
+
+      <div class="card__wrapper">
+        <div class="expiry__dateBox">
+          <input type="text" placeholder=" " />
+          <label>Expiry date</label>
+          <span>
+            <box-icon type="solid" name="calendar-alt"></box-icon>
+          </span>
+        </div>
+        <div class="cvv__box">
+          <input type="password" placeholder=" " />
+          <label>cvc/cvv</label>
+          <span>
+            <box-icon type="solid" name="info-circle"></box-icon>
+          </span>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+  </body>
+</html>

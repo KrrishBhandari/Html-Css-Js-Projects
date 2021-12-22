@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #daddfc;
+}
+
+.card__container {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card__container h2 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #4d4d4d;
+}
+
+.card__numberInput {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.card__numberInput input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #cccccc;
+}
+
+.card__numberInput label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+  pointer-events: none;
+}
+
+.card__numberInput span {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.card__numberInput .textbox:focus {
+  border: 2px solid #5f9ef1;
+}
+
+.card__numberInput .textbox:focus ~ label,
+.textbox:not(:placeholder-shown).textbox:not(:focus) ~ label {
+  top: 0;
+  font-size: 14px;
+  color: #5f9ef1;
+  padding: 0 5px;
+  background-color: #ffffff;
+}
+
+.card__wrapper {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  column-gap: 10px;
+}
+
+.card__wrapper .expiry__dateBox {
+  position: relative;
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.expiry__dateBox input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #cccccc;
+}
+
+.expiry__dateBox label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+  pointer-events: none;
+}
+
+.expiry__dateBox span {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.expiry__dateBox input:focus ~ label,
+input:not(:placeholder-shown).input:not(:focus) ~ label {
+  top: 0;
+  font-size: 14px;
+  padding: 0 5px;
+  background-color: #ffffff;
+}
+
+.card__wrapper .cvv__box {
+  position: relative;
+  flex-basis: 100%;
+}
+
+.cvv__box input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #cccccc;
+}
+
+.cvv__box label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+  pointer-events: none;
+}
+
+.cvv__box span {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.cvv__box input:focus ~ label,
+input:not(:placeholder-shown).input:not(:focus) ~ label {
+  top: 0;
+  font-size: 14px;
+  padding: 0 5px;
+  background-color: #ffffff;
+}

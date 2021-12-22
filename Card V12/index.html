@@ -12,6 +12,7 @@
     />
   </head>
   <body>
+    <a href="#" id="payBtn">Pay Money</a>
     <div class="card__container">
       <h2>Add new card</h2>
 
@@ -39,7 +40,21 @@
           </span>
         </div>
       </div>
+
+      <div class="card__cashHolder">
+        <input type="text" placeholder="Enter card holder's full name" />
+        <label>Expiry date</label>
+      </div>
     </div>
     <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+
+    <script>
+      const payBtn = document.getElementById("payBtn");
+      const card = document.querySelector(".card__container");
+
+      payBtn.addEventListener("click", () => {
+        card.classList.add("active");
+      });
+    </script>
   </body>
 </html>

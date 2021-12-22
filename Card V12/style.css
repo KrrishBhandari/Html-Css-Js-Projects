@@ -6,19 +6,45 @@
 }
 
 body {
+  position: relative;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #daddfc;
 }
 
+#payBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #121212;
+  padding: 15px 40px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
 .card__container {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 400px;
   padding: 20px;
   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.card__container.active {
+  top: 50%;
+  visibility: visible;
 }
 
 .card__container h2 {
@@ -51,6 +77,7 @@ body {
   transform: translateY(-50%);
   font-size: 16px;
   letter-spacing: 1px;
+  color: #cccccc;
   transition: all 0.5s;
   pointer-events: none;
 }
@@ -105,9 +132,10 @@ body {
   position: absolute;
   top: 50%;
   left: 20px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 1px;
+  color: #cccccc;
   transform: translateY(-50%);
   transition: all 0.5s;
   pointer-events: none;
@@ -127,7 +155,7 @@ body {
 .expiry__dateBox input:focus ~ label,
 input:not(:placeholder-shown).input:not(:focus) ~ label {
   top: 0;
-  font-size: 14px;
+  font-size: 12px;
   padding: 0 5px;
   background-color: #ffffff;
 }
@@ -149,9 +177,10 @@ input:not(:placeholder-shown).input:not(:focus) ~ label {
   position: absolute;
   top: 50%;
   left: 20px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 1px;
+  color: #cccccc;
   transform: translateY(-50%);
   transition: all 0.5s;
   pointer-events: none;
@@ -171,7 +200,41 @@ input:not(:placeholder-shown).input:not(:focus) ~ label {
 .cvv__box input:focus ~ label,
 input:not(:placeholder-shown).input:not(:focus) ~ label {
   top: 0;
-  font-size: 14px;
+  font-size: 12px;
   padding: 0 5px;
   background-color: #ffffff;
+}
+
+.card__cashHolder {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.card__cashHolder input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #cccccc;
+}
+
+.card__cashHolder input::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #cccccc;
+}
+
+.card__cashHolder label {
+  position: absolute;
+  top: -8px;
+  left: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+  padding: 0 5px;
+  background-color: #ffffff;
+  pointer-events: none;
 }

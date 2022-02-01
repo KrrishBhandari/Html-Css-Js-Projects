@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #f5f5f5;
+}
+
+.card {
+  width: 30rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  user-select: none;
+}
+
+.card .card__img {
+  position: relative;
+  height: 18rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__img .card__cartIcon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5rem;
+  background-color: #ffffff;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  cursor: pointer;
+}
+
+.card__container {
+  padding: 2rem 0;
+}
+
+.card__container h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.card__container > p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin: 0.8rem 0 1.6rem;
+}
+
+.card__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__priceContainer {
+  display: flex;
+  align-items: center;
+}
+
+.card__priceContainer > p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin-right: 1rem;
+}
+
+.card__priceContainer > span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 5rem;
+  color: #295bac;
+  background-color: #c4dafc;
+}
+
+.card__ratingContainer {
+  display: flex;
+  align-items: center;
+}
+
+.card__ratingContainer .card__ratingIcon {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.card__ratingIcon span {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  color: #ffbe5b;
+  margin-left: 0.5rem;
+}
+
+.card__ratingContainer > p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+  background-color: #282828;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  transform: scale(0.95);
+}
